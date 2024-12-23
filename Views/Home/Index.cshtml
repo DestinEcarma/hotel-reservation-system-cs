@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+	.w-500px {
+		width: 500px;
+	}
+</style>
+
+<form method="post" class="flex-column gap-4 align-items-center d-flex">
+	<div class="flex-column d-flex w-500px">
+		<label for="name" class="form-label">Name:</label>
+		<input type="text" id="name" name="name" required class="form-control" />
+	</div>
+	<div class="flex-column d-flex w-500px">
+		<label for="contact" class="form-label">Contact:</label>
+		<input type="text" id="contact" name="contact" required class="form-control" />
+	</div>
+	<div class="flex-column d-flex w-500px">
+		<label for"roomType" class="form-label">Room Type:</label>
+		<select id="roomType" name="roomType" class="form-select">
+			<option selected value="1">Single Bed</option>
+			<option value="2">Double Bed</option>
+			<option value="3">Triple Bed</option>
+		</select>
+	</div>
+	<div class="flex-column d-flex w-500px">
+		<label for="checkIn" class="form-label">Check In:</label>
+		<input type="date" id="checkIn" name="startDate" required class="form-control" />
+	</div>
+	<div class="flex-column d-flex w-500px">
+		<label for="checkOut" class="form-label">Check Out:</label>
+		<input type="date" id="checkOut" name="endDate" required class="form-control" />
+	</div>
+	<div class="flex-column d-flex w-500px">
+		<button type="submit" class="btn btn-primary align-self-end">Submit</button>
+	</div>
+</form>
